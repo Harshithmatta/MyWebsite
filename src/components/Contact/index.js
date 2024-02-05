@@ -164,12 +164,12 @@ const Contact = () => {
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
           <div style={{ marginTop: '-10px' }}>
           <ToastContainer position="bottom-center" />
           </div>
+          <ContactInput placeholder="Subject" name="subject" />
+          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+          <ContactButton type="submit" value="Send" />
         </ContactForm>
       </Wrapper>
     </Container>
