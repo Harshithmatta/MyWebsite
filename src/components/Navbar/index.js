@@ -144,16 +144,6 @@ const MobileMenu = styled.div`
     z-index: ${({ open }) => (open ? '1000' : '-1000')};
 
 `
-const MobileMenuItems = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  list-style: none;
-  width: 100%;
-  height: 100%;
-`
 
 export const MobileMenuLinks = styled(LinkR)`
   color: ${({ theme }) => theme.text_primary};
