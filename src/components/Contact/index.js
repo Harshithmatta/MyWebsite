@@ -157,19 +157,17 @@ const Contact = () => {
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
+        {/* //<div style={{ marginTop: '10px' }}>
+          
+        //</div> */}
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <div style={{ marginTop: '10px' }}>
-          <ToastContainer position="bottom-center" />
-          </div>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
-          <div style={{ marginTop: '-10px' }}>
-          <ToastContainer position="bottom-center" />
-          </div>
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
+          <ToastContainer position="top-right" style={{ zIndex: 9999 , marginTop: '60px' }} />
         </ContactForm>
       </Wrapper>
     </Container>
