@@ -182,7 +182,7 @@ export const ResumeButton = styled.a`
     max-width: 300px;
     text-align: center;
     padding: 16px 0;
-    color:${({ theme }) => theme.white};
+    color:${({ theme }) => theme.text_primary};
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
