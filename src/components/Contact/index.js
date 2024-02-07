@@ -167,7 +167,7 @@ const Contact = () => {
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
-          <ToastContainer position="top-right" style={{ zIndex: 9999 , marginTop: '60px' }} />
+          <ToastContainer position="top-right" style={{ zIndex: 9999 , marginTop: '80px' }} />
         </ContactForm>
       </Wrapper>
     </Container>
