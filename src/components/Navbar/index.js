@@ -11,7 +11,7 @@ import { IconButton, useMediaQuery } from '@mui/material';
 
 
 const Nav = styled.div`
-    background-color: ${({ theme }) => theme.card_light};
+    background-color: ${({ theme }) => theme.card};
     height: 80px;
     display: flex;
     align-items: center;
@@ -146,7 +146,7 @@ const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light + 99};
+    background: ${({ theme }) => theme.card};
     transition: all 0.6s ease-in-out;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     border-radius: 0 0 20px 20px;
@@ -212,6 +212,7 @@ const Navbar
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#education'>Education</NavLink>
+          <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank" >
@@ -240,6 +241,9 @@ const Navbar
               <MobileMenuLinks href='#education' onClick={() => {
                 setopen(!open)
               }}>Education</MobileMenuLinks>
+              <MobileMenuLinks href='#contact' onClick={() => {
+                setopen(!open)
+              }}>Contact</MobileMenuLinks>
               <GitHubButton style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.github} target="_blank">Github Profile</GitHubButton>
             </MobileMenu>
           )
