@@ -86,6 +86,9 @@ const NavLink = styled.a`
     :hover {
       color: ${({ theme }) => theme.primary};
     }
+    &.active {
+      border-bottom: 2px solid ${({ theme }) => theme.primary};
+    }
 `;
 
 const ButtonContainer = styled.div`
@@ -153,7 +156,7 @@ const MobileMenu = styled.div`
 
 `
 
-export const MobileMenuLinks = styled(LinkR)`
+export const MobileMenuLinks = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -162,6 +165,9 @@ export const MobileMenuLinks = styled(LinkR)`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
+  &.active {
+        border-bottom: 2px solid ${({ theme }) => theme.primary};
+       }
 `;
 
 // export  const MobileMenuLinks = styled.a`
